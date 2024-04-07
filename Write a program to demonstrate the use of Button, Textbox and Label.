@@ -1,0 +1,18 @@
+Public Class Form1 
+    Private Function Factorial(ByVal num As Integer) As Long 
+        Dim fact As Long = 1 
+        Dim i As Integer 
+ 
+        For i = 1 To num 
+            fact *= i 
+        Next 
+        Factorial = fact 
+    End Function 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 
+        Dim fact As Long 
+        fact = Factorial(TextBox1.Text) 
+        MessageBox.Show("Factorial of " & TextBox1.Text & 
+                   " is " & fact, "Factorial", MessageBoxButtons.OK, 
+                   MessageBoxIcon.Information) 
+    End Sub 
+End Class
