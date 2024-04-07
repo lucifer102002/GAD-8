@@ -1,0 +1,7 @@
+Public Class Form1 
+Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load 
+Dim b As New Button 
+b.Text = "Click" 
+Me.Controls.Add(b) 
+End Sub 
+End Class
